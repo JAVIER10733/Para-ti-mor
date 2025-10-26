@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Profesional</title>
+    <title>Feliz Cumpleaños</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,31 +12,46 @@
 
     <div class="container">
         <div class="card" id="mainCard">
-            <div class="logo">BIENVENIDO</div>
+            <div class="logo">FELIZ CUMPLEAÑOS</div>
             <div class="icon-container">
-                <div class="icon">✨</div>
+                <div class="icon">🎂</div>
             </div>
             <div class="message">
-                <h2>Descubre algo increíble</h2>
-                <p>Estás a punto de ver contenido especial.</p>
-                <p>Haz clic para continuar.</p>
+                <h2>Hoy es tu día especial</h2>
+                <p>Tengo una sorpresa preparada para ti.</p>
+                <p>Haz clic para descubrirla.</p>
             </div>
-            <button class="btn" id="showBtn">Ver contenido</button>
+            <button class="btn" id="showBtn">Abrir sorpresa</button>
+        </div>
+
+        <div class="card hidden" id="loadingCard">
+            <div class="logo">PREPARANDO</div>
+            <div class="loader-container">
+                <div class="loader"></div>
+            </div>
+            <div class="message">
+                <h2>Cargando tu regalo</h2>
+                <p id="loadingText">Espera un momento...</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-percent" id="progressPercent">0%</p>
+            </div>
         </div>
 
         <div class="card hidden" id="surpriseCard">
-    <div class="logo">CONTENIDO ESPECIAL</div>
-    <div class="icon-container">
-        <div class="icon">🎯</div>
+            <div class="logo">TU REGALO</div>
+            <div class="icon-container">
+                <div class="icon">🎁</div>
+            </div>
+            <div class="message">
+                <h2>¡Felicidades en tu día!</h2>
+                <p>Espero que este día esté lleno de alegría.</p>
+                <p>Disfruta tu regalo especial.</p>
+            </div>
+            <a href="flores/flores/flores/index.html" class="btn">Ver mi regalo</a>
+        </div>
     </div>
-    <div class="message">
-        <h2>Has desbloqueado el acceso</h2>
-        <p>Tu contenido premium está disponible ahora.</p>
-        <p>Disfruta de esta experiencia exclusiva.</p>
-    </div>
-
-    <a href="flores/flores/flores/index.html" class="btn" >Ir a presets gratis</a>
-</div>
 
     <script src="script.js"></script>
 </body>
